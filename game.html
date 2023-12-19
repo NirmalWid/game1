@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Haunted Realm Odyssey</title>
+    <link rel="icon" type="image/png" href="resources/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&display=swap">    
+</head>
+
+<body class="body" onload="idleAnimStart(); createBoxes();" onkeypress="keyCheck(event);">
+
+    <div class="bg" id="bg">
+
+        <img src="resources/Idle (1).png" class="boy" id="boy"/>
+
+        <audio id="jumpSound" src="resources/jump.mp3"></audio>
+        <audio id="dead1" src="resources/dead1.mp3"></audio>
+        <audio id="dead2" src="resources/dead2.mp3"></audio>
+        <audio id="cut" src="resources/cut.mp3"></audio>
+        <audio id="run" src="resources/run.mp3"></audio>
+        <audio id="bg1" src="resources/bg1.mp3"></audio>
+        <audio id="bg2" src="resources/bg2.mp3"></audio>
+        
+        <div class="score-container">
+            <div class="label">Score:</div>
+            <div class="score" id="score">0</div>
+        </div>
+        
+
+    </div>
+
+    <div class="end" id="end">
+        <audio id="gameOver1" src="resources/gameOver1.mp3"></audio>
+        <audio id="gameOver2" src="resources/gameOver2.mp3"></audio>
+
+        <div class="scary-text" style="color: rgb(168, 168, 168);"> Game Over </div>
+        <div class="scary-text" style="color: rgb(168, 168, 168);"> Your Score </div>
+        <div class="scary-score" style="color: rgb(255, 255, 255);" id="endScore"> 0 </div>
+
+        <button class="btn" onclick="reLoad();">Dead Again</button>
+    </div>
+
+
+    <div class="win" id="win">
+        <audio id="gameOver1" src="resources/gameOver1.mp3"></audio>
+        <audio id="gameOver2" src="resources/gameOver2.mp3"></audio>
+        <audio id="winM" src="resources/win.mp3"></audio>
+
+        <div class="scary-text" style="color: rgb(168, 168, 168);"> You Survive </div>
+        <div class="scary-text" style="color: rgb(168, 168, 168);"> Your Score </div>
+        <div class="scary-score" style="color: rgb(255, 255, 255);" id="winScore"> 0 </div>
+
+        <button class="btn" onclick="reLoad();">Wanna Dead</button>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

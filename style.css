@@ -1,0 +1,177 @@
+.body{
+    margin: 0px;
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url("resources/bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    position: absolute;
+}
+
+.boy{
+    height: 250px;
+    margin-top: 600px;
+    position: absolute;
+}
+
+.box{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    margin-top:550px;
+    background-image: url(resources/gif.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}  
+
+.score-container {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-top: 50px;
+
+}
+
+.score{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    margin-left: 150px;
+    margin-top: 50px;
+    position: absolute;
+    background: linear-gradient(to right, #ffc506, rgba(43, 255, 0, 0.945));
+    padding: 10px 80px; 
+    border-radius: 40px;
+    border: 2px solid snow;
+}
+
+
+
+
+.end{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url(resources/end.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    visibility: hidden;
+    
+}
+
+
+.win{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url(resources/end.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    visibility: hidden;
+    
+}
+
+.scary-text {
+    font-family: 'Creepster', Arial, sans-serif;
+    font-size: 150px; 
+    font-weight: bold;
+}
+
+.scary-score{
+    font-family: 'Creepster', Arial, sans-serif;
+    font-size: 150px; 
+    font-weight: bold;
+    background: linear-gradient(to right, #737b7e, #000000);
+    padding: 10px 80px; 
+    border-radius: 40px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+.btn{
+    height: 100px;
+    width: 300px;
+    margin-top: 50px;
+    font-family: 'Creepster', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 1000;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgb(255, 255, 255),
+    0 0 50px rgb(255, 255, 255);
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px rgb(87, 88, 88),
+    0 0 25px rgb(87, 88, 88), 0 0 50px rgb(87, 88, 88),
+    0 0 100px rgb(87, 88, 88), 0 0 200px rgb(87, 88, 88);
+    cursor: pointer;
+}
+
+
+.bg1{
+    width: 100%;
+    height: 100vh;
+    background-image: url("resources/home.jpg");
+    background-size: 100% 100%; 
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.start-text{
+    font-family: 'Creepster', Arial, sans-serif;
+    font-size: 60px; 
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 450px;
+    
+
+}
+
+.start-name{
+    font-family: 'Creepster', Arial, sans-serif;
+    font-size: 150px; 
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(109, 8, 8);
+    margin-top: 50px;
+}
+
+.box1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    margin-top:455px;
+    background-image: url(resources/gif.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
